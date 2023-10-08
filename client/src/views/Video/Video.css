@@ -1,0 +1,66 @@
+.video{
+     padding: 7vh 0 2vh;
+     color: aliceblue;
+     background-color: #1a1d29;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+}
+/* === ControlVideo === */
+/* .video 
+      height: 80vh;
+     width: 70%;
+     background-color: aqua;
+} */
+.video .film{
+     height: 80vh; 
+      width: 70%;
+}
+/* .video .film video{
+     /* height: 80vh; 
+} */
+
+/* === DetailFilm === */
+.video .detailFilm{
+     width: 70%;
+     margin-top: 1%;
+}
+.video .detailFilm .nameFavorite{
+     display: flex;
+     align-items: center
+}
+.video .detailFilm .nameFavorite .filmName{
+     font-size: 2rem;
+}
+.video .detailFilm .nameFavorite .favorite{
+     margin-left: 3%;
+}
+.video .detailFilm .filmCategory{
+     font-size: 1.2rem;
+     color: #EE8980;
+}
+.video .detailFilm .filmNational{
+     font-size: 1.2rem;
+     color: #62C4C3;
+}
+.video .detailFilm .filmDescription{
+     font-size: 1.2rem;
+     color: #ffffff;
+}
+/* === Episode === */
+.video .episode{
+     margin-top: 10px;
+     display: flex;
+     justify-content: flex-start;
+     width: 70%;
+}
+.video .episode .btnEpisode{
+     padding: 5px;
+     background-color: #383838;
+     border-radius: 5px;
+     text-decoration: none;
+     color: #fff;
+     margin-right: 10px;
+
+}

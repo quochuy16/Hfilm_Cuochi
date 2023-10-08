@@ -1,0 +1,71 @@
+.footer{
+    width: 100%;
+    height: 23vh;
+    display: flex;
+    background: #1a1d29;
+    flex-direction: column;
+    align-items: center;
+}
+/* logo */
+.footer .logo img{
+    width: 20%;
+}
+/* menu */
+.footer .menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer .menu a{
+    width: 8%;
+}
+.footer .menu button{
+    border: none;
+    background-color: #1a1d29;
+    color: #ffffff;
+    opacity: 70%;
+    margin-right: 5%;
+    padding-top: 10px;
+}
+.footer .menu button:hover{
+    color: #ffffff;    
+    opacity: 100%;
+}
+/* contact */
+.footer .contact1{
+    width: 40%;
+    display: flex;
+    justify-content: center ;
+    margin-top: 20px;
+}
+.footer .contact1 a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 25%;
+}
+.footer .contact1 a img {
+    width: 15%;
+    margin-right: 5px;
+}
+
+.footer .contact2{
+    width: 60%;
+    display: flex;
+    color: #ffffff;
+    justify-content: center ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .footer
+    .footer .menu{
+        display: none;
+    }
+    .footer .contact1{
+        width: 100%;
+    }
+}

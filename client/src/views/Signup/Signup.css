@@ -1,0 +1,62 @@
+.signup{
+    margin-top: 5vh;
+    color: aliceblue;
+    width: 100%;
+    height: 80vh;
+    padding: 10vh 0;
+    background-color: #1a1d29;
+    display: flex;
+    justify-content: center;
+}
+.signup .form{
+    padding: 30px;
+    background-color: #2f354be7;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signup .form input[type=text],input[type=password]{
+    color: white;
+    margin-top: 20px;
+    height: 5vh;
+    background-color: #2f354be7;
+    border: none;
+    outline: none;
+}
+.signup .form .checkbox{
+    margin-top: 20px;
+    display: flex;
+    align-items: center
+}
+.signup .form .MuiCheckbox-root{
+    padding: 0;
+    margin: 0 2%;
+}
+/* .signup .form input:focus{
+    border: none;
+} */
+.signup .form Button{
+    width: 50%;
+    margin-top: 20px;
+    background-color: #ff5f5fe7;
+}
+
+.signup .form .warning{
+    color: rgb(255, 75, 75);
+    font-size: 0.8rem;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .signup{
+        margin-top: 0;
+    }
+    .signup .form{
+        width: 100%;
+        height: 70vh;
+    }
+    .signup .form input{
+        height: 10vh;
+    }
+}

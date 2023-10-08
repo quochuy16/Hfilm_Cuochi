@@ -1,0 +1,61 @@
+.signin{
+    margin-top: 5vh;
+    color: aliceblue;
+    width: 100%;
+    height: 80vh;
+    padding: 10vh 0;
+    background-color: #1a1d29;
+    display: flex;
+    justify-content: center;
+}
+.signin .form{
+    padding: 30px;
+    width: 30%;
+    height: 50vh;
+    background-color: #2f354be7;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sign .form h1,h5{
+    margin-bottom: 30px;
+}
+.signin .form input{
+    color: white;
+    margin-bottom: 30px;
+    height: 5vh;
+    background-color: #2f354be7;
+    border: none;
+    outline: none;
+}
+.signin .form .MuiCheckbox-root{
+    width: 10% !important;
+}
+/* .signin .form input:focus{
+    border: none;
+} */
+.signin .form Button{
+    width: 50%;
+    margin-top: 20px;
+    background-color: #ff4545e7;
+}
+
+.signin .form .warning{
+    color: rgb(255, 75, 75);
+    font-size: 0.8rem;
+}
+
+.signin .form .forgotPass{
+    text-align: right;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 450px   ) {
+    .signin{
+        margin-top: 0;
+    }
+    .signin .form{
+        width: 100%;
+    }
+}

@@ -1,0 +1,75 @@
+.national{
+    margin-top: 5vh;
+    color: aliceblue;
+    width: 100%;
+    background-color: #1a1d29;
+    display: flex;
+    flex-direction: column
+}
+.national .content{
+    margin: 5vh 150px;
+}
+.national .content .title .dropdown #dropdown-basic{
+    /* width: 200px; */
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1a1d29;
+    border: none;
+}
+.national .content .title{
+    color:aliceblue;
+    font-size: 35px;
+    display: flex;
+}
+.national .content .title .dropdown .dropdownMenu{
+    background-color: #1a1d29;
+}
+.national .content .title .dropdown .dropdownMenu .dropdown-item{
+    color: #fff;
+}
+.national .content .title .dropdown .dropdownMenu .dropdown-item:hover{
+    color: #1a1d29;
+}
+.national .content .title .dropdown #dropdown-basic .nametitle{
+    height: 30px;
+    margin-left: 5px;
+    font-size: 25px;
+}
+.national .content .row1{
+    margin-top: 2%;
+}
+.national .content .row1 a{
+    text-decoration: none;
+}
+.national .content .item{
+    background-color: rgba(255, 255, 255, 0);
+    height: 40vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.national .content .item img{
+    width: 100%;
+    border-radius: 10px;
+}
+.national .content .row1 .filmName{
+    font-size: 20px;
+    color: rgb(218, 218, 218);
+    font-weight: bold;
+
+    display: block;
+  	display: -webkit-box;
+  	line-height: 1.3;
+  	-webkit-line-clamp: 1;  /* số dòng hiển thị */
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+.national .content .row1 .episodeNumber{
+    font-size: 15px;
+    color: rgb(145, 145, 145);
+    font-weight: bold;
+    margin-bottom: 20px;
+}

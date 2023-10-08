@@ -1,0 +1,83 @@
+.home{
+    background-color: #1a1d29;
+    margin-top: 7vh;
+    padding-bottom: 5vh;
+}
+.home .banner{
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+}
+.home .banner .slideout{
+    width: 60%;
+    background-size: cover;
+}
+
+/*CONTENT*/
+.home .content{
+    margin: 20px 150px 0 150px;
+}
+.home .content .title{
+    color:aliceblue;
+    font-size: 35px;
+    display: flex;
+}
+.home .content .title .nametitle{
+    height: 20px;
+    margin-left: 5px;
+}
+.home .content .row1{
+    margin-top: 2%;
+}
+.home .content .row1 .item{
+    background-color: rgba(255, 255, 255, 0);
+    height: 40vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.home .content .row1 .item:hover{
+    opacity: 60%;
+    /* background-image: url('./../../assets/images/btnPlay.png');
+    background-repeat:no-repeat;
+    background-position: center center; */
+}
+.home .content .row1 .item img{
+    width: 100%;
+    border-radius: 10px;
+}
+.home .content .row1 .filmName{
+    font-size: 20px;
+    color: rgb(218, 218, 218);
+    font-weight: bold;
+}
+.home .content .row1 .episodeNumber{
+    font-size: 15px;
+    color: rgb(145, 145, 145);
+    font-weight: bold;
+}
+/*REPONSIVE*/
+/* IP 12pmx */
+@media only screen and (max-width: 450px   ) {
+    .home{
+        margin-top: 7vh;
+        margin-bottom: 0;
+    }
+    .home .banner {        
+        height: 185px;
+    }
+    .home .banner .slideout{
+        width: 100%;
+    }
+    .home .content{
+        margin:1rem 0.5rem;
+    }
+    .home .content .title{
+        font-size: 20px;
+        padding: 1rem 0;
+    }
+    .home .content .title .icon{
+        width: 30px !important;
+    }
+
+  }

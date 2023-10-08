@@ -1,0 +1,54 @@
+.series{
+    margin-top: 7vh;
+    color: aliceblue;
+    width: 100%;
+    background-color: #1a1d29;
+    display: flex;
+    flex-direction: column;
+}
+.series .content{
+    margin: 5vh 150px;
+}
+
+.series .content .title{
+    color:aliceblue;
+    font-size: 35px;
+    display: flex;
+}
+
+.series .content .row1{
+    margin-top: 2%;
+}
+.series .content .row1 a{
+    text-decoration: none;
+}
+.series .content .item{
+    background-color: rgba(255, 255, 255, 0);
+    height: 40vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.series .content .item img{
+    width: 100%;
+    border-radius: 10px;
+}
+.series .content .row1 .filmName{
+    font-size: 20px;
+    color: rgb(218, 218, 218);
+    font-weight: bold;
+
+    display: block;
+  	display: -webkit-box;
+  	line-height: 1.3;
+  	-webkit-line-clamp: 1;  /* số dòng hiển thị */
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+.series .content .row1 .episodeNumber{
+    font-size: 15px;
+    color: rgb(145, 145, 145);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
