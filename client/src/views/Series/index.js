@@ -1,4 +1,4 @@
-import { useEffect,useState } from 'react';
+import { useEffect,useRef,useState } from 'react';
 import Layout from '../../components/Layout'
 import './Series.css'
 import { useLocation } from 'react-router-dom';
@@ -34,11 +34,21 @@ function Series(){
         }
     },[id])
     console.log(searchResults)
+    const heightRef = useRef()
+    const [height,setHeight] = useState(201)
+    useEffect(() => {
+        const element = heightRef.current;
+        if (element) {
+          const height = element.clientHeight;
+          console.log(height<=600,height);
+          setHeight(height)
+        }
+      }, [heightRef,id,searchParams]);
     return(
         <Layout>
-        <div className="series">
+        <div className={height<=500?'seriesHeightMin':'series'}>
             <div className='content'>
-                <div className='row1'>
+                <div ref={heightRef} className='row1'>
                     <Box sx={{ flexGrow: 2 }}>
                         <Grid container spacing={1}>
                             {searchResults.map((film,index)=>(

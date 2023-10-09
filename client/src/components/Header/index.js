@@ -52,16 +52,17 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 function Header(){
   const [name,setName] = useState('')
   useEffect(()=>{
-  if(localStorage.getItem('Token')){
+    if(localStorage.getItem('Token')){
       setName(localStorage.getItem('Name'))
     }else{
       localStorage.clear()
     }
   },[])
   // const { name, logout } = useContext(AuthContext);
+  let navigate = useNavigate();
   
-    const [btn, setBtn] = useState('')
-    var page = window.location.href.slice(22)
+  const [btn, setBtn] = useState('')
+  var page = window.location.href.slice(22)
     const hanleBtnHome = () =>{
         setBtn('')
         document.documentElement.scrollTop = 0
@@ -99,7 +100,6 @@ function Header(){
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
-  let navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
     // Xử lý tìm kiếm với giá trị searchTerm
@@ -115,7 +115,7 @@ function Header(){
                 <Link to='/categories' onClick={hanleBtnCate} className={page === 'categories' ? 'selected':'nosl'}><CIcon icon={cilMovie} style={page === 'categories' ?{'--ci-primary-color': '#EE8980',width:'20px', margin: "0 5px 5px 0"}:{'--ci-primary-color': 'white',width:'20px', margin: "0 5px 5px 0"}} />THỂ LOẠI</Link>
                 <Link to="/nation" onClick={hanleBtnNation} className={page === 'nation' ? 'selected':'nosl'}><CIcon icon={cilMap} style={page === 'nation' ?{'--ci-primary-color': '#62C4C3',width:'20px', margin: "0 5px 5px 0"}:{'--ci-primary-color': 'white',width:'20px', margin: "0 5px 5px 0"}} />QUỐC GIA</Link>
                 <Link to="/favourite" onClick={hanleBtnFavourite} className={page === 'favourite' ? 'selected':'nosl'}><CIcon icon={cilHeart} style={page === 'favourite' ?{'--ci-primary-color': '#F14666',width:'20px', margin: "0 5px 5px 0"}:{'--ci-primary-color': 'white',width:'20px', margin: "0 5px 5px 0"}} />YÊU THÍCH</Link>
-                <Link to="/allFilm" onClick={hanleBtnSeries} className={page === 'allFilm' || 'allFilm?search=' ? 'selected':'nosl'}><CIcon icon={cilPlaylistAdd} style={page === 'allFilm' || 'allFilm?search=' ?{'--ci-primary-color': '#FFC872',width:'20px', margin: "0 5px 5px 0"}:{'--ci-primary-color': 'white',width:'20px', margin: "0 5px 5px 0"}} />PHIM</Link>
+                <Link to="/allFilm" onClick={hanleBtnSeries} className={page === 'allFilm' ? 'selected':'nosl'}><CIcon icon={cilPlaylistAdd} style={page === 'allFilm' ?{'--ci-primary-color': '#FFC872',width:'20px', margin: "0 5px 5px 0"}:{'--ci-primary-color': 'white',width:'20px', margin: "0 5px 5px 0"}} />PHIM</Link>
                 <form className='form'  onSubmit={handleSubmit}>
                   <Search>
                       <SearchIconWrapper>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState,useRef } from 'react'
 import Layout from '../../components/Layout'
 import './Favourite.css'
 import AccessError from '../AccessError'
@@ -58,14 +58,24 @@ function Favourite(){
       }, [arrFilmID]);
     console.log('các film đã thích ',arrFilm)
     console.log('kho fim ',films)
-    
+
+    const heightRef = useRef()
+    const [height,setHeight] = useState(201)
+    useEffect(() => {
+        const element = heightRef.current;
+        if (element) {
+          const height = element.clientHeight;
+          console.log(height);
+          setHeight(height)
+        }
+      }, [heightRef]);
     return(
         <Layout>
             <>
                 {!token ? 
                     <AccessError/>
                 :
-                    <div className="favourite">
+                    <div ref={heightRef} className={height<=800?'favouriteHeightMin':'favourite'}>
                         <div className='content'>
                             <div className='title'>
                                 <CIcon icon={cilFire} style={{'--ci-primary-color': 'red',width:'40px'}} /> 

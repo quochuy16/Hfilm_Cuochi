@@ -2,7 +2,6 @@
     margin-top: 7vh;
     color: aliceblue;
     width: 100%;
-    height: 100vh;
     background-color: #1a1d29;
     display: flex;
     flex-direction: column;
@@ -37,6 +36,59 @@
     border-radius: 10px;
 }
 .favourite .content .row1 .filmName{
+    font-size: 20px;
+    color: rgb(218, 218, 218);
+    font-weight: bold;
+
+    display: block;
+  	display: -webkit-box;
+  	line-height: 1.3;
+  	-webkit-line-clamp: 1;  /* số dòng hiển thị */
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+
+.favouriteHeightMin{
+    margin-top: 7vh;
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1d29;
+    display: flex;
+    flex-direction: column;
+}
+.favouriteHeightMin .content{
+    margin: 5vh 150px;
+    
+}
+.favouriteHeightMin .content .title{
+    display: flex;
+}
+.favouriteHeightMin .content .nametitle{    
+    margin-left: 10px;
+    color:aliceblue;
+    font-size: 30px;
+}
+.favouriteHeightMin .content .row1{
+    margin-top: 2%;
+}
+.favouriteHeightMin .content .row1 a{
+    text-decoration: none;
+}
+.favouriteHeightMin .content .item{
+    background-color: rgba(255, 255, 255, 0);
+    height: 40vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.favouriteHeightMin .content .item img{
+    width: 100%;
+    border-radius: 10px;
+}
+.favouriteHeightMin .content .row1 .filmName{
     font-size: 20px;
     color: rgb(218, 218, 218);
     font-weight: bold;
